@@ -1,0 +1,9 @@
+{
+    "cloud":1,
+    "wind_speed":1,
+    "wind_direction":1,
+    "wind_gustiness":1,
+    "rain":1,
+    "rain_intensity":1,
+    "fog":1
+}

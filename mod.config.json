@@ -1,0 +1,10 @@
+{
+    "name":"ForceWeather",
+    "author":"Jugador123",
+    "version":"1.0.0",
+    "license":"MIT",
+    "src":{
+        "src/main.js":"CacheModLoad"
+    }
+}
+
