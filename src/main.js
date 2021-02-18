@@ -2,8 +2,8 @@ exports.mod = () => {
     logger.logInfo("[Mod]ForceWeather")
     let settings = require("../settings.json");
     let gameplay = fileIO.readParsed(db.user.configs.gameplay);
-    let weather = fileIO.readParsed(db.user.cache.weather);
-    weather = {
+    let data = fileIO.readParsed(db.user.cache.weather);
+    data = {
         "err": 0,
         "errmsg": null,
         "data": [
@@ -21,7 +21,11 @@ exports.mod = () => {
                     "pressure": 767,
                     "date": "2020-01-01",
                     "time": "16:00:00"
-                }
+                   
+                },
+                "date": "2020-01-01",
+                "time": "16:00:00",
+                "acceleration": 7
             }
         ]
     }
@@ -31,6 +35,6 @@ exports.mod = () => {
         "forceWeatherId": 0
     }
     fileIO.write(db.user.configs.gameplay, gameplay);
-    fileIO.write(db.user.cache.weather, weather);
+    fileIO.write(db.user.cache.weather, data);
     logger.logSuccess("[Mod] Weather has been applied correctly!")
 }
